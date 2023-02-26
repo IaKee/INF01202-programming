@@ -1,0 +1,3 @@
+# Program Description
+
+This program is a simple test of a progress bar. It prompts the user to input the size of the progress bar (in characters) and the step of progress (from 0.0 to 1.0). Then, it calculates the number of characters that should be filled with a hash symbol ('#') and the number of remaining characters that should be filled with a minus symbol ('-'). Finally, it prints out the progress bar, which is a simple line of characters that represent the progress made so far. The progress bar consists of a left angle bracket, followed by the hash characters that represent the completed progress, then the minus characters that represent the remaining progress, and finally, the right angle bracket.

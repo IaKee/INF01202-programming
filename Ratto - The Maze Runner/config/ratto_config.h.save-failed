@@ -1,0 +1,73 @@
+#include <allegro.h>
+
+typedef struct location
+{
+    int posicao_x;
+    int posicao_y;
+} POSICAO;
+
+typedef struct movement
+{
+    int deslocamento_x;
+    int deslocamento_y;
+} DESLOCAMENTO;
+
+typedef struct entity
+{
+    POSICAO CRIATURA_pos;
+    DESLOCAMENTO CRIATURA_desloc;
+    int vida;
+    int velocidade;
+    int personalidade;
+    int forma; //(0 - se normal | 1- se cachorro)
+    int stamina; //O quanto a criatura pode correr antes de se cansar;
+    int stamina_regen; //Regeneracao de stamina
+    int dano; //O dano que essa criatura causa
+    char end_spryte[50]; //Caminho para as musicas dos niveis
+} CRIATURA;
+
+typedef struct level
+{
+    int n_fase;
+    int score_queijo;
+    int score_ossos;
+    int score_gatos;
+    int score_tempo;
+    float tempo_limite;
+    float tempo_corrente;
+    char end_musica[50]; //Caminho para as musicas dos niveis
+    char end_sprytes_mapa[50];
+    char mapa_formato[30][15];
+
+    CRIATURA Rato;
+    CRIATURA Gato[4];
+} NIVEL;
+
+typedef struct imenu
+{
+    bool menu_abriu; //Determina se o menu ja foi aberto, para nao sobrescrever o ja aberto
+    int seleciona_opcao; //Opcao que foi selecionada no menu do jogo
+} OPCOES;
+
+void init(int resol_x, int resol_y) {
+	int depth, res;
+	allegro_init();
+	depth = desktop_color_depth();
+	if (depth == 0) depth = 32;
+	set_color_depth(depth);
+	res = set_gfx_mode(GFX_AUTODETECT_WINDOWED,  resol_x, resol_y, 0, 0);
+	if (res != 0) {
+		allegro_message(allegro_error);
+		exit(-1);
+	}
+
+	install_timer();
+	install_keyboard();
+    install_sound(DIGI_AUTODETECT, MIDI_AUTODETECT, NULL);
+	/* add other initializations here */
+}
+
+void deinit() {
+	clear_keybuf();
+	/* add other deinitializations here */
+}
