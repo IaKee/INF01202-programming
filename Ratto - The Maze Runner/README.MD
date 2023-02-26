@@ -5,7 +5,7 @@ Mouse Trap is a game developed in C language using the Allegro graphics library.
 Additionally, there are doors that can be opened or closed by pressing the letter B, making it easier for the mouse to escape. However, if a door is opened over the mouse or the cats, the mouse loses a life.
 
 ## Movement system demo
-![MovementDemo](https://www.youtube.com/watch?v=13UFSrRgJsI&feature=youtu.be)
+[![PreviewImage](https://imgur.com/a/vizkOmq)](https://www.youtube.com/watch?v=13UFSrRgJsI&feature=youtu.be)
 
 ## Features
 
