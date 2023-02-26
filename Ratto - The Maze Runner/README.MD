@@ -5,7 +5,7 @@ Mouse Trap is a game developed in C language using the Allegro graphics library.
 Additionally, there are doors that can be opened or closed by pressing the letter B, making it easier for the mouse to escape. However, if a door is opened over the mouse or the cats, the mouse loses a life.
 
 ## Movement system demo
-![![PreviewImage](https://imgur.com/a/vizkOmq)](https://www.youtube.com/watch?v=13UFSrRgJsI&feature=youtu.be)
+[Movement demo](https://www.youtube.com/watch?v=13UFSrRgJsI&feature=youtu.be)
 
 ## Features
 
@@ -24,7 +24,7 @@ Mouse Trap features several subroutines that were developed to improve the funct
 - menu_principal_atualiza_retangulo(): A secondary function that draws a blue square in the positions where the cursor (the mouse's head) is not located, to avoid duplicating the sprite. Receives an integer variable as a parameter, indicating the position of the cursor.
 
 ## Screenshots
-![MenuPreview](https://imgur.com/a/afNgdp6)
+![a](https://i.imgur.com/6Key47J.png)
 
 ## Conclusion
 The development of Mouse Trap allowed for the improvement of the knowledge acquired throughout the semester in the Algoritmos e Programação course, with a focus on the use of the C language and the Allegro graphics library. The game, while based on a classic, presents a cleaner and more detailed visual design, comparable to more modern games of the same genre. The project showcases the development of subroutines to optimize code functionality and offers a fun and challenging gaming experience.
